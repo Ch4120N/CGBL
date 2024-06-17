@@ -23,3 +23,6 @@ Charon General Black License For More Details.
 You Should Have Received A Copy Of The  Charon General Black License
 Along With This Program.  If Not, See < http://Ch4120N.github.io/CGBL/>
 ```
+
+> [!IMPORTANT]
+> Don't Forget This License For `Charon Security Group` For Hacking Software.
