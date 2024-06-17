@@ -1,4 +1,6 @@
-<h1 align="center"> 
+<h1 align="center">
+  <img src="/.img/Charon-General-Black-License.jpg" alt="Charon General Black License" />
+  
   Charon General Black License
 </h1>
 
