@@ -10,7 +10,7 @@ The terms of the license are:
 
 * Your software code must be provided as an open source project.
 
-How to put a license in your software or product :
+How to put a license in your software or product:
 
 ```licence
 Product Name  Ver 1.0 Copyright < Year>  <Name Of Author>  
