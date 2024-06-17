@@ -2,6 +2,8 @@
   <img src=".img/Charon-General-Black-License.jpg" alt="Charon General Black License" />
   <br>
   Charon General Black License
+  
+  [![License: CGBL](https://img.shields.io/badge/License-CGBL-blue?style=flat-square)](https://Ch4120N.github.io/CGBL)
 </h1>
 
 Charon General Black License is a license based on supporting the production of hacking tools. You can use this license to make your own tools. By using this license, you have actually supported the Charon team, and our support means help in your project and special advice for your product.
