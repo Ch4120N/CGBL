@@ -47,3 +47,17 @@ const moveCursor = (e)=> {
 }
 
 window.addEventListener('mousemove', moveCursor)
+
+
+function handleResize() {
+  if (window.innerWidth <= 768) {
+    cursorRounded.style.display = 'none';
+    cursorPointed.style.display = 'none';
+  } else {
+      cursorRounded.style.display = 'block';
+      cursorPointed.style.display = 'block';
+  }
+}
+
+
+handleResize();

@@ -114,10 +114,26 @@ html {
     pre {
         white-space: pre-wrap; /* Allow pre to wrap on small screens */
     }
+    .custom-cursor, .custom-cursor-dot {
+        display: none;
+    }
 }
 @media (max-width: 576px) {
     .header h1 {
         font-size: 1.2rem;
+    }
+    .container.box {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    h1, h2, h4 {
+        font-size: 1.5rem;
+    }
+    pre {
+        font-size: 0.875rem;
+    }
+    html {
+        cursor: none;
     }
 }
 @media (hover: none) {
@@ -125,7 +141,6 @@ html {
         cursor: none;
     }
 }
-
 
 
 a {
