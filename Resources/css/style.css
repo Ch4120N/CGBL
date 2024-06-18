@@ -1,0 +1,234 @@
+/* body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+} */
+
+
+/* .box {
+    width: 200px;
+    height: 200px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+} */
+html {
+    scroll-behavior: smooth!important;
+    cursor: none; /* Hide the default cursor */
+    overflow-y: scroll; /* Ensure vertical scrollbar is always visible */
+}
+
+/* body {
+
+} */
+.box {
+    width: 90%;
+    height: auto;
+    /* height: ; */
+    background-color: #0D1117;
+    border-radius: 25px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.subbox {
+    background-color: #151a22;
+    padding: 15px;
+    border-left: 2px solid #007bff;
+    border-right: 2px solid #007bff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* .box:hover {
+    background-color: #111111;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+} */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; Space between boxes */
+}
+
+
+.borderrd-2 {
+    border-radius: 25px;
+}
+
+
+/* .content {
+    display: flex;
+    
+    align-items: start!important;
+} */
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 15px;
+    border: 3px solid #121212; /* Space around scrollbar thumb */
+}
+::-webkit-scrollbar-track {
+    background-color: #2c2c2c;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    .content {
+        padding: 15px;
+    }
+    .box {
+        padding: 10px;
+    }
+    pre {
+        white-space: pre-wrap; /* Allow pre to wrap on small screens */
+    }
+}
+@media (max-width: 576px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+}
+@media (hover: none) {
+    body {
+        cursor: none;
+    }
+}
+
+
+
+a {
+    color: #007bff;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+    cursor: none;
+}
+.custom-cursor {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.04s ease-in-out, opacity 0.04s ease-in-out; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999; /* Ensure the cursor stays on top */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s ease-in-out, opacity 0.05s ease-in-out;
+}
+.custom-cursor-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.01s inherit, opacity 0.01s ease-in-out;
+    /* transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out; */
+    /* transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out; */
+    /* transition: 0.1s ease-in inherit; */
+}
+
+a:hover::before{
+    cursor: none;
+}
+
+a:hover::after{
+    cursor: none;
+}
+
+a:hover{
+    cursor: none;
+}
+
+
+span {
+    background-color: #343941;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.bg-darken {
+    background-color: #161B22;
+}
+
+u {
+    text-decoration-color: red;
+    /* background-color: red; */
+}
+
+mark {
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+code {
+    color: #d63384;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+}
+
+pre {
+    overflow: auto;
+    border-radius: 25px;
+}
+
+
+footer {
+    text-align: center;
+    width: 90%;
+    color: white;
+    background-color: #0D1117;
+    border-radius: 25px;
+}
