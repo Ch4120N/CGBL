@@ -48,6 +48,30 @@ html {
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
+.boxing {
+    width: 90%;
+    height: auto;
+    /* height: ; */
+    background-color: #0D1117;
+    border-radius: 25px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* display: flex; */
+    /* align-items: start;
+    justify-content: center; */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.boxing:hover {
+    background-color: #111111;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
 
 .subbox {
     background-color: #151a22;
@@ -75,6 +99,11 @@ html {
 .borderrd-2 {
     border-radius: 25px;
 }
+
+.borderrd-1 {
+    border-radius: 15px;
+}
+
 
 
 /* .content {
@@ -148,8 +177,8 @@ a {
 }
 a:hover {
     color: #0056b3;
-    text-decoration: none;
-    cursor: none;
+    /* text-decoration: none;
+    cursor: none; */
 }
 .custom-cursor {
     /* position: fixed;
@@ -190,17 +219,6 @@ a:hover {
     /* transition: 0.1s ease-in inherit; */
 }
 
-a:hover::before{
-    cursor: none;
-}
-
-a:hover::after{
-    cursor: none;
-}
-
-a:hover{
-    cursor: none;
-}
 
 
 span {
@@ -246,4 +264,13 @@ footer {
     color: white;
     background-color: #0D1117;
     border-radius: 25px;
+}
+
+
+.BTNLINK{
+    text-decoration:none;
+    cursor: none;
+}
+.BTNLINK:hover {
+    cursor: none;
 }

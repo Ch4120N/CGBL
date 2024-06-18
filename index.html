@@ -59,16 +59,82 @@
                     If you decide to use the Charon General Black license for your software or product, you must include the following statement in the License file or in any other document:</p>
 
                 <br>
+                <div class="p-2">
+                    <h4>Ethical and Legal Use License for Software</h4>
+                </div>
+                <div class="boxing text-start">
+                    <div class="p-2" id="LicenseText">
+                        <p>
+                            &lt;<strong>Product Name</strong>&gt; 
+                            <strong>Copyright</strong> &lt;<strong>Year</strong>&gt; &lt;<strong>Author Name</strong>&gt;
+                            <br>
+                            This Program Is Free Software: You Can Redistribute It And/Or Modify 
+                            It Under The Terms Of The Charon General Black License As Published By The Black Hacking Software Foundation.
+                            <h5>Terms and Conditions for Copying, Distribution, and Modification:</h5>
+                            <br>
+                            <h6>Non-use of other licenses:</h6>
+                            Software or tools distributed under the CGBL license cannot utilize other licenses.<br>
+                            This clause is designed to maintain integrity and consistency in the use of this license.
+                            <br>
+                            <br>
+                            <h6>Permitted Use:</h6>
+                            This software is designed solely for legal and ethical use.<br>
+                            Usage for educational purposes, legal penetration testing, and security evaluation is permitted.<br>
+                            Any unauthorized use, including illegal hacking, data theft, or unauthorized system intrusion, is prohibited.
+                            <br>
+                            <br>
+                            <h6>Usage Conditions:</h6>
+                            Users must ensure that all their activities comply with local, national, and international laws.<br>
+                            Users must obtain necessary permissions from system owners before conducting any penetration testing or related security activities.
+                            <br>
+                            <br>
+                            <h6>User Responsibility:</h6>
+                            Users are responsible for any use of the software and must report all their activities transparently and document them. <br>
+                            Users must not use the software to create, distribute, or execute malicious code (such as viruses, trojans, and malware).
+                            <br><br>
+                            <h6>Data Protection:</h6>
+                            Users must comply with all data protection and privacy laws.<br>
+                            Users must not collect, store, or process personal or sensitive information without explicit permission from the owners.
+                            <br><br>
+                            <h6>Distribution of Modifications:</h6>
+                            Any modifications or changes to this software must be distributed under the same original license and include all the terms and conditions of this license.<br>
+                            Users must fully document all changes and publish a copy of the documentation along with the modified software.
+                            <br><br>
+                            <h6>Developer Commitments:</h6>
+                            The developer commits to providing the software with high ethical and legal standards and ensuring no intentional backdoors, vulnerabilities, or malicious features exist in the software.<br>
+                            The developer assumes no responsibility for misuse, illegal use, or unethical behavior by users; all responsibilities and liabilities rest with the users.<br>
+                            The developer reserves the right to update and amend the terms of this license at any time, with or without prior notice to users.
+                            <br><br>
+                            <h6>License Termination:</h6>
+                            This license will automatically terminate if any of the above conditions are violated, and users must immediately cease using the software.<br>
+                            The developer reserves the right to block access to the software for users who violate the terms of the license at any time and without prior notice and may take legal action against such users.<br>
+                            Upon termination of the license, users must destroy all copies of the software in their possession and confirm in writing to the developer that this condition has been met.
+                            <br><br>
+                            <h6>Disclaimer of Warranty:</h6>
+                            This software is provided "as is," without any express or implied warranty, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.<br>
+                            The developer does not warrant that the software will meet users' requirements, that the operation of the software will be uninterrupted or error-free, or that any defects identified will be corrected.<br>
+                            Users assume all risks associated with the use of this software, including but not limited to risks of data loss, system damage, or any other adverse effects resulting from the use or misuse of the software.
+                            <br><br>
+                            <h6>Limitation of Liability:</h6>
+                            In no event shall the developer be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including but not limited to loss of use, data, or profits) arising from or in connection with the use or performance of this software, whether in contract, tort, or otherwise, even if advised of the possibility of such damages.<br>
+                            The developer's total liability arising from or in connection with this license or the use of the software shall not exceed the amount paid by the user for the software, if any.
+                            <br><br>
+                            For more details, See &lt;http://Ch4120N.github.io/CGBL&gt;<br>
+                                                        
+                        </p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary borderrd-1 justify-content-center BTNLINK" id="copy-btn" onclick="copyText(event)">
+                    Copy License
+                </button>
 
-                <pre class="bg-dark text-light p-3">
-&lt;Product Name&gt; Ver 1.0 Or 2.0 Copyright &lt;Year&gt; &lt;Name Of Author&gt;
-This Program Is Free Software: You Can Redistribute It And/Or Modify 
-It Under The Terms Of The Charon General Black License As Published By
-The Black Hacking Software Foundation, Either Version 1 Or 2 Of The License.
-This Program Is Distributed In The Hope That It Will Be Useful,
-But Without Any Warranty. See The Charon General Black License For More Details.
-You Should Have Received A Copy Of The Charon General Black License
-Along With This Program. If Not, See &lt;http://Ch4120N.github.io/CGBL&gt;</pre>
+                <button type="button" class="btn btn-primary borderrd-1 justify-content-center BTNLINK" id="download-btn" onclick="downloadLicense()">
+                    Download License
+                </button>
+                <!-- <button href="#LicenseText" id="copy-btn" onclick="copyText(event)" class="linkBTN">
+                    Copy License
+                </button> -->
+                <!-- button -->
             </div>
 
             <div class="subbox">
@@ -102,6 +168,8 @@ Along With This Program. If Not, See &lt;http://Ch4120N.github.io/CGBL&gt;</pre>
 
     <footer class="container text-light p-2 mb-2 text-middle">
         <h4>Powered By Ch4120N With &#10084;&#65039;</h4>
+        <br>
+        <h5>© 2024 Charon Security Group. All rights reserved.</h5>
     </footer>
 
     <div class="custom-cursor" id="customCursor">
@@ -117,3 +185,79 @@ Along With This Program. If Not, See &lt;http://Ch4120N.github.io/CGBL&gt;</pre>
 <script src="Resources/js/jquery-3.5.1.slim.min.js"></script>
 <script src="Resources/js/popper.min.js"></script>
 <script src="Resources/js/script.js"></script>
+
+<script>
+    function copyText(event) {
+
+        event.preventDefault();
+
+        // Get the text to be copied
+        var textToCopy = document.getElementById("LicenseText").innerText;
+
+        // Create a temporary textarea element to hold the text
+        var tempTextarea = document.createElement("textarea");
+        tempTextarea.value = textToCopy;
+
+        // Append the textarea to the body (it has to be in the document to be selected)
+        document.body.appendChild(tempTextarea);
+
+        // Select the text in the textarea
+        tempTextarea.select();
+        tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text
+        document.execCommand("copy");
+
+        // Remove the temporary textarea from the document
+        document.body.removeChild(tempTextarea);
+
+        // Change the link text to "Copied!"
+        var copyLink = document.getElementById("copy-btn");
+        copyLink.innerText = "Copied!";
+
+        // Optionally, change the text back to "Copy text" after a delay
+        setTimeout(function() {
+            copyLink.innerText = "Copy License";
+        }, 2000); // 2 seconds delay
+    }
+
+
+    function downloadLicense() {
+        // Get the text content from the <p> tag
+        var textToDownload = document.getElementById("LicenseText").innerText;
+
+        // Create a Blob from the text
+        var blob = new Blob([textToDownload], { type: "text/plain" });
+
+        // Create a link element
+        var link = document.createElement("a");
+
+        // Create an object URL for the Blob
+        var url = URL.createObjectURL(blob);
+
+        // Set the download attribute with a filename
+        link.href = url;
+        link.download = "LICENSE";
+
+        // Append the link to the body (necessary for the click to work in some browsers)
+        document.body.appendChild(link);
+
+        // Programmatically click the link to trigger the download
+        link.click();
+
+        // Remove the link from the document
+        document.body.removeChild(link);
+
+        // Revoke the object URL to free up resources
+        URL.revokeObjectURL(url);
+
+        // Change the button text to "Downloaded!"
+        var downloadButton = document.getElementById("download-btn");
+        downloadButton.innerText = "Downloaded!";
+
+        // Optionally, change the text back to "Download" after a delay
+        setTimeout(function() {
+            downloadButton.innerText = "Download License";
+        }, 2000); // 2 seconds delay
+    }
+</script>
