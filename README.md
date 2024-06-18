@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src=".img/Charon-General-Black-License.jpg" alt="Charon General Black License" />
+  <img src="Resources/img/Charon-General-Black-License.jpg" alt="Charon General Black License" />
   <br>
   Charon General Black License
   
