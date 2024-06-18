@@ -30,4 +30,4 @@ You Should Have Received A Copy Of The  Charon General Black License
 Along With This Program.  If Not, See < http://Ch4120N.github.io/CGBL/>
 ```
 
-If you're interested in learning more about the Charon General Black License and how it can benefit your projects, visit the [!Charon General Black License page](https://ch4120n.github.io/CGBL/).
+If you're interested in learning more about the Charon General Black License and how it can benefit your projects, visit the [Charon General Black License page](https://ch4120n.github.io/CGBL/).
