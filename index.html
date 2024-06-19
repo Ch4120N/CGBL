@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="Resources/css/style.css">
     <link rel="shortcut icon" href="Resources/img/ICON.ico" type="image/x-icon">
+
 </head>
-<body class="bg-darken justify-content-center" >
+<body class="bg-darken justify-content-center">
 
     <div class="container box p-2 mt-4">
         <div class="header">
@@ -131,10 +132,6 @@
                 <button type="button" class="btn btn-primary borderrd-1 justify-content-center BTNLINK" id="download-btn" onclick="downloadLicense()">
                     Download License
                 </button>
-                <!-- <button href="#LicenseText" id="copy-btn" onclick="copyText(event)" class="linkBTN">
-                    Copy License
-                </button> -->
-                <!-- button -->
             </div>
 
             <div class="subbox">
@@ -160,9 +157,6 @@
                 <br>
                 <p>The <span>Charon General Black License</span> is more than just a set of legal terms; it is a commitment to ethical hacking and the betterment of cybersecurity. By adhering to this license, <mark>developers can ensure that their tools are used for good, gain valuable support, and contribute to the global effort to enhance digital security</mark>. Whether you are an experienced developer or just starting, the CGBL provides a framework that encourages ethical practices and communit<br><br>If you're interested in learning more about the Charon General Black License and how it can benefit your projects, visit the <a href="https://ch4120n.github.io/CGBL/">Charon General Black License page</a>.</p>
             </div>
-
-
-
         </div>
     </div>
 
@@ -174,90 +168,48 @@
 
     <div class="custom-cursor" id="customCursor">
         <div class="custom-cursor-dot"></div>
-
     </div>
 
+    <script src="Resources/js/bootstrap.bundle.js"></script>
+    <script src="Resources/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="Resources/js/popper.min.js"></script>
+    <script src="Resources/js/script.js"></script>
 
+    <script>
+        function copyText(event) {
+            event.preventDefault();
+            var textToCopy = document.getElementById("LicenseText").innerText;
+            var tempTextarea = document.createElement("textarea");
+            tempTextarea.value = textToCopy;
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+            tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+            document.body.removeChild(tempTextarea);
+            var copyLink = document.getElementById("copy-btn");
+            copyLink.innerText = "Copied!";
+            setTimeout(function() {
+                copyLink.innerText = "Copy License";
+            }, 2000);
+        }
 
+        function downloadLicense() {
+            var textToDownload = document.getElementById("LicenseText").innerText;
+            var blob = new Blob([textToDownload], { type: "text/plain" });
+            var link = document.createElement("a");
+            var url = URL.createObjectURL(blob);
+            link.href = url;
+            link.download = "LICENSE";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+            var downloadButton = document.getElementById("download-btn");
+            downloadButton.innerText = "Downloaded!";
+            setTimeout(function() {
+                downloadButton.innerText = "Download License";
+            }, 2000);
+        }
+    </script>
 </body>
 </html>
-<script src="Resources/js/bootstrap.bundle.js"></script>
-<script src="Resources/js/jquery-3.5.1.slim.min.js"></script>
-<script src="Resources/js/popper.min.js"></script>
-<script src="Resources/js/script.js"></script>
-
-<script>
-    function copyText(event) {
-
-        event.preventDefault();
-
-        // Get the text to be copied
-        var textToCopy = document.getElementById("LicenseText").innerText;
-
-        // Create a temporary textarea element to hold the text
-        var tempTextarea = document.createElement("textarea");
-        tempTextarea.value = textToCopy;
-
-        // Append the textarea to the body (it has to be in the document to be selected)
-        document.body.appendChild(tempTextarea);
-
-        // Select the text in the textarea
-        tempTextarea.select();
-        tempTextarea.setSelectionRange(0, 99999); // For mobile devices
-
-        // Copy the text
-        document.execCommand("copy");
-
-        // Remove the temporary textarea from the document
-        document.body.removeChild(tempTextarea);
-
-        // Change the link text to "Copied!"
-        var copyLink = document.getElementById("copy-btn");
-        copyLink.innerText = "Copied!";
-
-        // Optionally, change the text back to "Copy text" after a delay
-        setTimeout(function() {
-            copyLink.innerText = "Copy License";
-        }, 2000); // 2 seconds delay
-    }
-
-
-    function downloadLicense() {
-        // Get the text content from the <p> tag
-        var textToDownload = document.getElementById("LicenseText").innerText;
-
-        // Create a Blob from the text
-        var blob = new Blob([textToDownload], { type: "text/plain" });
-
-        // Create a link element
-        var link = document.createElement("a");
-
-        // Create an object URL for the Blob
-        var url = URL.createObjectURL(blob);
-
-        // Set the download attribute with a filename
-        link.href = url;
-        link.download = "LICENSE";
-
-        // Append the link to the body (necessary for the click to work in some browsers)
-        document.body.appendChild(link);
-
-        // Programmatically click the link to trigger the download
-        link.click();
-
-        // Remove the link from the document
-        document.body.removeChild(link);
-
-        // Revoke the object URL to free up resources
-        URL.revokeObjectURL(url);
-
-        // Change the button text to "Downloaded!"
-        var downloadButton = document.getElementById("download-btn");
-        downloadButton.innerText = "Downloaded!";
-
-        // Optionally, change the text back to "Download" after a delay
-        setTimeout(function() {
-            downloadButton.innerText = "Download License";
-        }, 2000); // 2 seconds delay
-    }
-</script>
