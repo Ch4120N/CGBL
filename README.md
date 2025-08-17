@@ -71,7 +71,7 @@ To use this license in different places such as: **Github**, you must create a n
 
 ```plaintext
 
-<Product Name> Copyright <Year> <Author Name>
+<Charon SMS Bomber> Copyright <2025> <Ch4120N>
 This Program Is Free Software: You Can Redistribute It And/Or Modify It Under The Terms Of The Charon General Black License As Published By The Black Hacking Software Foundation.
 
 Terms and Conditions for Copying, Distribution, and Modification:
@@ -89,6 +89,55 @@ Usage Conditions:
 Users must ensure that all their activities comply with local, national, and international laws.
 Users must obtain necessary permissions from system owners before conducting any penetration testing or related security activities.
 
+Attribution Requirement (Mandatory Naming and Credit):
+1. **General Principle**  
+   Every individual, group, or organization using this software, whether in original or modified form, must provide clear, visible, and unambiguous credit to the original author.  
+   The required attribution text is:  
+   "<Ch4120N> - Original Developer of <Charon SMS Bomber>"
+
+2. **Forms of Attribution**  
+   Attribution must appear in *all* of the following contexts where the software is used, published, or distributed:  
+   - **Source Code:**  
+     The attribution must remain in the file headers of the source code and must not be removed, altered, or obscured.  
+   - **Documentation:**  
+     Any documentation (manuals, wikis, reports, tutorials) that describes, explains, or accompanies the software must include a section explicitly mentioning the author and the license.  
+   - **User Interfaces (if applicable):**  
+     If the software has a user interface (CLI, GUI, or Web-based), a visible credit must be included in the "About" section, splash screen, or footer.  
+   - **Public Presentations and Demonstrations:**  
+     When the software is shown in conferences, academic settings, media, or training, the attribution must be announced verbally and/or displayed on slides or materials.  
+   - **Redistribution:**  
+     Any redistributed copies of the software (modified or not) must contain the attribution in both binary and source form. If distributed as part of another project, the attribution must remain accessible and visible.
+
+3. **Format of Attribution**  
+   Attribution must always contain:  
+   - The full name of the original author (<Ch4120N>)  
+   - The name of the software (<Charon SMS Bomber>)  
+   - A reference to the license type (CGBL License)  
+   - A link to the license page: <http://Ch4120N.github.io/CGBL>  
+
+   Example:  
+   "This software includes components of <Charon SMS Bomber>, originally developed by <Ch4120N>, licensed under the CGBL License. See <http://Ch4120N.github.io/CGBL> for details."
+
+4. **Prohibited Practices Regarding Attribution**  
+   - Removing or hiding the attribution text.  
+   - Replacing the author’s name with another name without acknowledgment.  
+   - Presenting the work as entirely original without mentioning the source.  
+   - Using deceptive methods to minimize or obscure attribution.  
+
+5. **Modified Versions**  
+   If the software is modified, the modified version must clearly indicate:  
+   - The original author and project name.  
+   - A statement that the version is modified.  
+   - The identity of the person or entity responsible for the modifications.  
+   - The modified version must continue to comply with this attribution clause.
+
+6. **Internal and Private Use**  
+   Even in private or internal use (within a company, organization, or personal project), the attribution must remain in the code headers and internal documentation.  
+   Removal of attribution, even for private forks, is considered a violation of this license.  
+
+7. **Academic and Research Use**  
+   In any academic work (papers, theses, projects) where the software is used, proper citation of the author and the license is mandatory. The citation must follow academic standards and include reference to the license link.  
+
 User Responsibility:
 Users are responsible for any use of the software and must report all their activities transparently and document them.
 Users must not use the software to create, distribute, or execute malicious code (such as viruses, trojans, and malware).
@@ -100,6 +149,7 @@ Users must not collect, store, or process personal or sensitive information with
 Distribution of Modifications:
 Any modifications or changes to this software must be distributed under the same original license and include all the terms and conditions of this license.
 Users must fully document all changes and publish a copy of the documentation along with the modified software.
+All modifications must also preserve the attribution clause mentioned above.
 
 Developer Commitments:
 The developer commits to providing the software with high ethical and legal standards and ensuring no intentional backdoors, vulnerabilities, or malicious features exist in the software.
